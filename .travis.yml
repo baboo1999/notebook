@@ -11,4 +11,4 @@ script:
   - git config user.email "1572814701@qq.com"
   - git add .
   - git commit -m "update note"
-  - git push --force https://$B_TOKEN@github.com/Paper-kite/notebook.git main 
+  - git push --force https://$B_TOKEN@github.com/Paper-kite/notebook.git origin main 
