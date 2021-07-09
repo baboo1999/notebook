@@ -1,0 +1,14 @@
+language: node_js
+node_js: 
+  - "10"
+before_script:
+  - npm i -g github-markdown
+script: 
+  - rm -rf .git
+  - bash ./bootstrap.sh
+  - git init
+  - git config user.name "baboo"
+  - git config user.email "1572814701@qq.com"
+  - git add .
+  - git commit -m "update note"
+  - git push --force https://$B_TOKEN@github.com/Paper-kite/notebook.git master
